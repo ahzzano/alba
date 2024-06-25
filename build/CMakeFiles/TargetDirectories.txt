@@ -1,0 +1,3 @@
+C:/Users/wsant/Documents/Programming Projects/alba/build/CMakeFiles/Alba.dir
+C:/Users/wsant/Documents/Programming Projects/alba/build/CMakeFiles/edit_cache.dir
+C:/Users/wsant/Documents/Programming Projects/alba/build/CMakeFiles/rebuild_cache.dir
