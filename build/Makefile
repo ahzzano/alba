@@ -128,6 +128,19 @@ Alba/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/build
 .PHONY : Alba/fast
 
+#=============================================================================
+# Target rules for targets named copy_assets
+
+# Build rule for target.
+copy_assets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 copy_assets
+.PHONY : copy_assets
+
+# fast build rule for target.
+copy_assets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\copy_assets.dir\build.make CMakeFiles/copy_assets.dir/build
+.PHONY : copy_assets/fast
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -160,6 +173,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... copy_assets
 	@echo ... Alba
 	@echo ... src/main.obj
 	@echo ... src/main.i

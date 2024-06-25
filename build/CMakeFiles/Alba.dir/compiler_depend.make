@@ -293,6 +293,7 @@ CMakeFiles/Alba.dir/src/main.cpp.obj: C:/Users/wsant/Documents/Programming\ Proj
   C:/Users/wsant/Documents/Programming\ Projects/alba/include/SDL2/SDL_video.h \
   C:/Users/wsant/Documents/Programming\ Projects/alba/include/SDL2/begin_code.h \
   C:/Users/wsant/Documents/Programming\ Projects/alba/include/SDL2/close_code.h \
+  C:/Users/wsant/Documents/Programming\ Projects/alba/src/alba.h \
   C:/Users/wsant/Documents/Programming\ Projects/alba/src/types.h
 
 
@@ -679,6 +680,8 @@ C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/VC/Tools/MSVC/14.39.3
 C:/Program\ Files/LLVM/lib/clang/18/include/stddef.h:
 
 C:/Program\ Files/LLVM/lib/clang/18/include/stdint.h:
+
+C:/Users/wsant/Documents/Programming\ Projects/alba/src/alba.h:
 
 C:/Program\ Files/LLVM/lib/clang/18/include/tbmintrin.h:
 
