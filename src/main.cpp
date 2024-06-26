@@ -13,7 +13,7 @@ const int SCREEN_WIDTH = 1000;
 const int SCREEN_HEIGHT = 1000;
 
 int main(int argc, char *argv[]) {
-  std::cout << "Hello world!";
+  std::cout << "Hello world!\n";
 
   SDL_Init(SDL_INIT_EVERYTHING);
   _window window(SDL_CreateWindow("Alba", SDL_WINDOWPOS_CENTERED,
@@ -24,14 +24,19 @@ int main(int argc, char *argv[]) {
   _renderer renderer(SDL_CreateRenderer(window.get(), -1, 0),
                      SDL_DestroyRenderer);
 
-  _surface board(SDL_LoadBMP("assets/board.bmp"), SDL_FreeSurface);
-  _texture board_texture(
-      SDL_CreateTextureFromSurface(renderer.get(), board.get()),
+  _surface boardbg(SDL_LoadBMP("assets/board.bmp"), SDL_FreeSurface);
+  _texture boardTexture(
+      SDL_CreateTextureFromSurface(renderer.get(), boardbg.get()),
       SDL_DestroyTexture);
   _surface window_surface(SDL_GetWindowSurface(window.get()), SDL_FreeSurface);
 
   SDL_Event event;
   bool running = true;
+
+  initializeTilemap(renderer);
+
+  Chessboard board;
+  board.setupBoard("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR");
 
   while (running) {
     SDL_PollEvent(&event);
@@ -40,11 +45,12 @@ int main(int argc, char *argv[]) {
     }
 
     SDL_RenderClear(renderer.get());
-    SDL_RenderCopy(renderer.get(), board_texture.get(), NULL, NULL);
+    SDL_RenderCopy(renderer.get(), boardTexture.get(), NULL, NULL);
+    renderChessBoard(renderer, board);
     SDL_RenderPresent(renderer.get());
   }
 
-  board.reset();
+  boardbg.reset();
   window_surface.reset();
 
   window.reset();

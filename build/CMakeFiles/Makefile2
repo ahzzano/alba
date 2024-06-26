@@ -81,12 +81,12 @@ clean: CMakeFiles/copy_assets.dir/clean
 CMakeFiles/Alba.dir/all: CMakeFiles/copy_assets.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\wsant\Documents\Programming Projects\alba\build\CMakeFiles" --progress-num=1,2 "Built target Alba"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\wsant\Documents\Programming Projects\alba\build\CMakeFiles" --progress-num=1,2,3,4 "Built target Alba"
 .PHONY : CMakeFiles/Alba.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Alba.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\wsant\Documents\Programming Projects\alba\build\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\wsant\Documents\Programming Projects\alba\build\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Alba.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\wsant\Documents\Programming Projects\alba\build\CMakeFiles" 0
 .PHONY : CMakeFiles/Alba.dir/rule

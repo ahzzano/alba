@@ -3,6 +3,10 @@ file(REMOVE_RECURSE
   "Alba.exe.manifest"
   "Alba.lib"
   "Alba.pdb"
+  "CMakeFiles/Alba.dir/src/albarenderer.cpp.obj"
+  "CMakeFiles/Alba.dir/src/albarenderer.cpp.obj.d"
+  "CMakeFiles/Alba.dir/src/chess.cpp.obj"
+  "CMakeFiles/Alba.dir/src/chess.cpp.obj.d"
   "CMakeFiles/Alba.dir/src/main.cpp.obj"
   "CMakeFiles/Alba.dir/src/main.cpp.obj.d"
 )

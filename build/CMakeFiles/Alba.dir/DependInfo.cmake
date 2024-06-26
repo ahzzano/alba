@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/wsant/Documents/Programming Projects/alba/src/albarenderer.cpp" "CMakeFiles/Alba.dir/src/albarenderer.cpp.obj" "gcc" "CMakeFiles/Alba.dir/src/albarenderer.cpp.obj.d"
+  "C:/Users/wsant/Documents/Programming Projects/alba/src/chess.cpp" "CMakeFiles/Alba.dir/src/chess.cpp.obj" "gcc" "CMakeFiles/Alba.dir/src/chess.cpp.obj.d"
   "C:/Users/wsant/Documents/Programming Projects/alba/src/main.cpp" "CMakeFiles/Alba.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Alba.dir/src/main.cpp.obj.d"
   )
 

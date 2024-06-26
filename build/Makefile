@@ -141,6 +141,54 @@ copy_assets/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\copy_assets.dir\build.make CMakeFiles/copy_assets.dir/build
 .PHONY : copy_assets/fast
 
+src/albarenderer.obj: src/albarenderer.cpp.obj
+.PHONY : src/albarenderer.obj
+
+# target to build an object file
+src/albarenderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/src/albarenderer.cpp.obj
+.PHONY : src/albarenderer.cpp.obj
+
+src/albarenderer.i: src/albarenderer.cpp.i
+.PHONY : src/albarenderer.i
+
+# target to preprocess a source file
+src/albarenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/src/albarenderer.cpp.i
+.PHONY : src/albarenderer.cpp.i
+
+src/albarenderer.s: src/albarenderer.cpp.s
+.PHONY : src/albarenderer.s
+
+# target to generate assembly for a file
+src/albarenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/src/albarenderer.cpp.s
+.PHONY : src/albarenderer.cpp.s
+
+src/chess.obj: src/chess.cpp.obj
+.PHONY : src/chess.obj
+
+# target to build an object file
+src/chess.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/src/chess.cpp.obj
+.PHONY : src/chess.cpp.obj
+
+src/chess.i: src/chess.cpp.i
+.PHONY : src/chess.i
+
+# target to preprocess a source file
+src/chess.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/src/chess.cpp.i
+.PHONY : src/chess.cpp.i
+
+src/chess.s: src/chess.cpp.s
+.PHONY : src/chess.s
+
+# target to generate assembly for a file
+src/chess.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Alba.dir\build.make CMakeFiles/Alba.dir/src/chess.cpp.s
+.PHONY : src/chess.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -175,6 +223,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... copy_assets
 	@echo ... Alba
+	@echo ... src/albarenderer.obj
+	@echo ... src/albarenderer.i
+	@echo ... src/albarenderer.s
+	@echo ... src/chess.obj
+	@echo ... src/chess.i
+	@echo ... src/chess.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

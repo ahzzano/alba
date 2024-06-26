@@ -1,7 +1,6 @@
 CMakeFiles/Alba.dir/src/main.cpp.obj: \
   C:\Users\wsant\Documents\Programming\ Projects\alba\src\main.cpp \
   C:\Users\wsant\Documents\Programming\ Projects\alba\src\alba.h \
-  C:\Users\wsant\Documents\Programming\ Projects\alba\src\types.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_render.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_stdinc.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_config.h \
@@ -161,9 +160,13 @@ CMakeFiles/Alba.dir/src/main.cpp.obj: \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_video.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_surface.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_blendmode.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory \
+  C:\Users\wsant\Documents\Programming\ Projects\alba\src\albarenderer.h \
+  C:\Users\wsant\Documents\Programming\ Projects\alba\src\chess.h \
+  C:\Users\wsant\Documents\Programming\ Projects\alba\src\types.h \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cstdint \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\yvals_core.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xkeycheck.h \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\exception \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\yvals.h \
   C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\crtdbg.h \
@@ -177,7 +180,6 @@ CMakeFiles/Alba.dir/src/main.cpp.obj: \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\type_traits \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cstddef \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xtr1common \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cstdint \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vcruntime_exception.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\eh.h \
   C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_terminate.h \
@@ -227,6 +229,12 @@ CMakeFiles/Alba.dir/src/main.cpp.obj: \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xtimec.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ctime \
   C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\time.h \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\string \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xstring \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_sanitizer_annotate_container.hpp \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xpolymorphic_allocator.h \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cctype \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\ctype.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_events.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_keyboard.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_keycode.h \
@@ -266,6 +274,8 @@ CMakeFiles/Alba.dir/src/main.cpp.obj: \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_version.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_locale.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_misc.h \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\bitset \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_bit_utils.hpp \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iostream \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\istream \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream \
@@ -280,16 +290,11 @@ CMakeFiles/Alba.dir/src/main.cpp.obj: \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_system_error_abi.hpp \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cerrno \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\stdexcept \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xstring \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_sanitizer_annotate_container.hpp \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xpolymorphic_allocator.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xcall_once.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xerrc.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xlocale \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xfacet \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xlocinfo \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_xlocinfo_types.hpp \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cctype \
-  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\ctype.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\clocale \
   C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\locale.h
