@@ -37,11 +37,64 @@ int main(int argc, char *argv[]) {
 
   Chessboard board;
   board.setupBoard("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR");
+  board.selectedPiece = 0;
+  bool is_held = false;
+  int currentlySelected = 0;
 
   while (running) {
     SDL_PollEvent(&event);
-    if (event.type == SDL_QUIT) {
+
+    switch (event.type) {
+    case SDL_MOUSEBUTTONDOWN: {
+      if (is_held == true) {
+        break;
+      }
+      SDL_MouseButtonEvent mbevent = event.button;
+      int boardX = mbevent.x / 125;
+      int boardY = mbevent.y / 125;
+
+      currentlySelected = boardX + 8 * boardY;
+      u64 selected_piece = 1;
+
+      for (int i = 0; i < currentlySelected; i++) {
+        selected_piece <<= 1;
+      }
+
+      if ((board.allPositions & selected_piece) == 0) {
+        break;
+      }
+
+      if (board.selectedPiece == 0) {
+        board.selectedPiece = selected_piece;
+      }
+      is_held = true;
+      break;
+    }
+    case SDL_MOUSEBUTTONUP: {
+      if (event.button.state != SDL_RELEASED) {
+        break;
+      }
+      if (is_held != true) {
+        break;
+      }
+      SDL_MouseButtonEvent mbevent = event.button;
+      int boardX = mbevent.x / 125;
+      int boardY = mbevent.y / 125;
+
+      int target = boardX + 8 * boardY;
+      u64 target_piece = 1;
+
+      board.selectedPiece = 0;
+      currentlySelected = 0;
+      is_held = false;
+      break;
+    }
+    case SDL_QUIT: {
       running = false;
+      break;
+    }
+    default:
+      break;
     }
 
     SDL_RenderClear(renderer.get());

@@ -274,8 +274,6 @@ CMakeFiles/Alba.dir/src/main.cpp.obj: \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_version.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_locale.h \
   C:\Users\wsant\DOCUME~1\PROGRA~1\alba\include\SDL2\SDL_misc.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\bitset \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_bit_utils.hpp \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iostream \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\istream \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream \
