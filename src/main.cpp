@@ -54,11 +54,7 @@ int main(int argc, char *argv[]) {
       int boardY = mbevent.y / 125;
 
       currentlySelected = boardX + 8 * boardY;
-      u64 selected_piece = 1;
-
-      for (int i = 0; i < currentlySelected; i++) {
-        selected_piece <<= 1;
-      }
+      u64 selected_piece = 1ull << currentlySelected;
 
       if ((board.allPositions & selected_piece) == 0) {
         break;
@@ -82,10 +78,12 @@ int main(int argc, char *argv[]) {
       int boardY = mbevent.y / 125;
 
       int target = boardX + 8 * boardY;
-      u64 target_piece = 1;
+      u64 target_piece = 1ull << target;
 
-      board.selectedPiece = 0;
+      // make the move
+      board.makeMove(target);
       currentlySelected = 0;
+
       is_held = false;
       break;
     }

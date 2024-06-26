@@ -233,29 +233,5 @@ CMakeFiles/Alba.dir/src/chess.cpp.obj: \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xpolymorphic_allocator.h \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cctype \
   C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\ctype.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\bitset \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_bit_utils.hpp \
   C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\csignal \
-  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\signal.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iostream \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\istream \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ios \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xlocnum \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cmath \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\streambuf \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xiosbase \
-  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\share.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\system_error \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_system_error_abi.hpp \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\cerrno \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\stdexcept \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xcall_once.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xerrc.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xlocale \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xfacet \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xlocinfo \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_xlocinfo_types.hpp \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\clocale \
-  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\locale.h
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.22621.0\ucrt\signal.h

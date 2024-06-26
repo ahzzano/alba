@@ -1,6 +1,15 @@
 #include "types.h"
 #include <string>
 
+enum ChessPiece {
+  King = 6,
+  Queen = 5,
+  Knight = 4,
+  Bishop = 3,
+  Rook = 2,
+  Pawn = 1
+};
+
 class Chessboard {
 public:
   // We will be using bit boards to make this very efficient
@@ -27,6 +36,8 @@ public:
   // Positions of each piece
   // If we want to get the positions of the white bishops,
   // we simply use a bitwise OR operation on whitePositions and bishopPositions
+  //
+  // Also note,
   u64 pawnPositions = 0;
   u64 rookPositions = 0;
   u64 bishopPositions = 0;
@@ -46,4 +57,11 @@ public:
    * @param fen this will take in a FEN string that will setup the states
    */
   void setupBoard(std::string fen);
+
+  void makeMove(int targetPosition);
+  void makeMove(int selectedPiece, int targetPosition);
+  void unmakeMove();
+
+  ChessPiece getPieceOnPosition(u64 position);
+  bool isBlack(u64 position);
 };

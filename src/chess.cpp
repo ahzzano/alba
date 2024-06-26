@@ -1,10 +1,8 @@
 #include "chess.h"
 
-#include <bitset>
 #include <cctype>
 #include <csignal>
 #include <cstdlib>
-#include <iostream>
 #include <string>
 
 void Chessboard::setupBoard(std::string fen) {
@@ -32,11 +30,7 @@ void Chessboard::setupBoard(std::string fen) {
 
       bool is_lower = islower(c);
       char lowercase = tolower(c);
-      u64 pos = 0b1;
-      for (int i = 0; i < file + 8 * rank; i++) {
-        pos <<= 1;
-      }
-      // u64 pos = 0b1 << (u64)(file + 8 * rank);
+      u64 pos = 1ull << (file + 8 * rank);
 
       if (std::isdigit(c)) {
         int a = std::atoi(&c);
@@ -82,4 +76,88 @@ void Chessboard::setupBoard(std::string fen) {
   }
 
   return;
+}
+
+ChessPiece Chessboard::getPieceOnPosition(u64 position) {
+  if ((position & pawnPositions) != 0) {
+    return ChessPiece::Pawn;
+  } else if ((position & rookPositions) != 0) {
+    return ChessPiece::Rook;
+  } else if ((position & bishopPositions) != 0) {
+    return ChessPiece::Bishop;
+  } else if ((position & knightPositions) != 0) {
+    return ChessPiece::Knight;
+  } else if ((position & queenPositions) != 0) {
+    return ChessPiece::Queen;
+  } else {
+    return ChessPiece::King;
+  }
+}
+
+bool Chessboard::isBlack(u64 position) {
+  return (blackPositions & position) > 0;
+}
+
+void moveBit(u64 *board, u64 currentPosition, u64 newPosition) {
+  *board ^= currentPosition;
+  *board |= newPosition;
+}
+
+u64 moveBit(u64 board, u64 currentPosition, u64 newPosition) {
+  u64 toRet = board;
+  toRet ^= currentPosition;
+  toRet |= newPosition;
+  return toRet;
+}
+
+void Chessboard::makeMove(int targetPiece) {
+  u64 targetPieceInBits = 1ull << targetPiece;
+
+  allPositions ^= selectedPiece;
+  allPositions |= targetPieceInBits;
+
+  // TODO: Make sure that the piece gets consumed rather than overlaps being
+  // present over two different bitboards
+  //
+  if ((selectedPiece & blackPositions) > 0) {
+    blackPositions ^= selectedPiece;
+    blackPositions |= targetPieceInBits;
+  }
+
+  switch (getPieceOnPosition(selectedPiece)) {
+  case ChessPiece::Pawn: {
+    pawnPositions ^= selectedPiece;
+    pawnPositions |= targetPieceInBits;
+    break;
+  }
+  case ChessPiece::Rook: {
+    rookPositions ^= selectedPiece;
+    rookPositions |= targetPieceInBits;
+    break;
+  }
+  case ChessPiece::Bishop: {
+    bishopPositions ^= selectedPiece;
+    bishopPositions |= targetPieceInBits;
+    break;
+  }
+  case ChessPiece::Knight: {
+    knightPositions ^= selectedPiece;
+    knightPositions |= targetPieceInBits;
+    break;
+  }
+  case ChessPiece::King: {
+    kingPositions ^= selectedPiece;
+    kingPositions |= targetPieceInBits;
+    break;
+  }
+  case ChessPiece::Queen: {
+    queenPositions ^= selectedPiece;
+    queenPositions |= targetPieceInBits;
+    break;
+  }
+  default:
+    break;
+  }
+
+  selectedPiece = 0;
 }
